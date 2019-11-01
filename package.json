@@ -4,7 +4,7 @@
   "description": "first project",
   "main": "index.js",
   "scripts": {
-    "test": "eslint .",
+    "lint": "eslint -ignore-path .gitignore .",
     "start": "node index.js"
   },
   "repository": {
@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/mash-mallow/node/issues"
   },
-  "homepage": "https://github.com/mash-mallow/node#readme"
+  "homepage": "https://github.com/mash-mallow/node#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "husky": "^3.0.9",
+    "prettier": "^1.18.2"
+  }
 }
